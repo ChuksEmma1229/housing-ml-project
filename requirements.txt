@@ -1,0 +1,12 @@
+mlflow==3.15.2
+pandas
+numpy
+scikit-learn
+cloudpickle
+fastapi
+uvicorn
+joblib
+pandas
+scikit-learn
+mlflow
+numpy

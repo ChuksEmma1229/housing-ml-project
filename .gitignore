@@ -1,0 +1,22 @@
+# MLflow
+mlflow.db
+mlruns/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Model artefacts
+model.pkl
+
+# Virtual environments
+.venv/
+env/
+
+# VS Code
+.vscode/
+
+# OS files
+Thumbs.db
+.DS_Store
