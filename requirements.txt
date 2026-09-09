@@ -10,3 +10,4 @@ pandas
 scikit-learn
 mlflow
 numpy
+pytest
