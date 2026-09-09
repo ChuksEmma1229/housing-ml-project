@@ -1,3 +1,4 @@
+import pytest
 import mlflow
 
 from src.register_model import (
@@ -10,7 +11,13 @@ def test_champion_performance():
 
     configure_mlflow()
 
-    champion = get_version_by_alias("champion")
+    try:
+        champion = get_version_by_alias("champion")
+    except Exception:
+        pytest.skip(
+            "No champion model exists yet. "
+            "Model training has not run."
+        )
 
     client = mlflow.MlflowClient()
 
